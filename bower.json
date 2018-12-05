@@ -1,0 +1,20 @@
+{
+  "name": "test-maquetador",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jorge <jorgeavenda.11@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jorgeavenda/test-maquetador",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
