@@ -1,1 +1,8 @@
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'general';
+
+.header {
+	min-height: 80px;
+	border-bottom: 1px solid #b3bac9;
+	box-shadow: 3px 3px 3px 0 rgba(66, 66, 66, 0.2);
+}
