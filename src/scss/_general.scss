@@ -76,6 +76,13 @@ $font-primary: 'Open Sans', sans-serif;
    transform: translateY(-50%);
 }
 
+@mixin absolute-center {
+	position: absolute;
+   left: 50%;
+   top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 @mixin pseudo($pos: absolute, $content: '') {
    position: $pos;
    content: $content;
@@ -91,6 +98,7 @@ $font-primary: 'Open Sans', sans-serif;
 }
 
 body {
+	position: relative;
 	font-family: $font-primary;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
@@ -111,3 +119,8 @@ ul {
 }
 
 a, a:hover, a:visited, a:focus { text-decoration: none !important; }
+
+button {
+	background-color: transparent;
+	border: none;
+}

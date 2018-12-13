@@ -12,16 +12,20 @@ html(lang="es")
   body
     header.header.w-100.bg-tertiary
       .container-fluid.d-flex.align-items-center
-        button(type="button", class="menu-trigger text-gray-light hidden-md")
+        button(type="button", class="menu-trigger text-gray-light hidden-md hidden-lg")
           i.fa.fa-bars
 
         a(href="/", class="header__logo")
           img(src="https://via.placeholder.com/50")
 
         nav.header__nav.d-flex
-          ul.main-menu
+          ul.nav.main-menu
             li
               a(href="#") Sobre nosotros
+            li.dropdown
+              a(class="dropdown-toggle", data-toggle="dropdown", href="#")
+                span Más
+                i.fa.fa-angle-down
           
           .notifications
             i.fa.fa-bell
@@ -32,48 +36,49 @@ html(lang="es")
             img(src="https://via.placeholder.com/40", class="img-circle", width="40")
             
     aside.side-menu.bg-tertiary
-      form.search.w-100
-        .input-group.w-100
-          button.search__button
-            i.fa.fa-search
-          input(type="text", class="search--input form-control", placeholder="Buscar producto", name="searchProduct")
+      .side-menu__wrapper
+        form.search.w-100
+          .input-group.w-100
+            button.search__button
+              i.fa.fa-search
+            input(type="text", class="search--input form-control", placeholder="Buscar producto", name="searchProduct")
 
-      ul.product-list
-        li.product-list__item.d-flex
-          img(src="https://via.placeholder.com/50", width="50")
-          span What Is The Right Look
-          button.close-button
-            i.fa.fa-times-circle
-        li.product-list__item.d-flex.selected
-          img(src="https://via.placeholder.com/50", width="50")
-          span What Is Botox
-          button.close-button
-            i.fa.fa-times-circle
-        li.product-list__item.d-flex.selected
-          img(src="https://via.placeholder.com/50", width="50")
-          span Youthfull And Vibrant Skin
-          button.close-button
-            i.fa.fa-times-circle
-        li.product-list__item.d-flex
-          img(src="https://via.placeholder.com/50", width="50")
-          span Breast Lifts Improvement
-          button.close-button
-            i.fa.fa-times-circle
-        li.product-list__item.d-flex.selected
-          img(src="https://via.placeholder.com/50", width="50")
-          span Dna The Future Of Nutrition
-          button.close-button
-            i.fa.fa-times-circle
-        li.product-list__item.d-flex
-          img(src="https://via.placeholder.com/50", width="50")
-          span Proven Techniques Help
-          button.close-button
-            i.fa.fa-times-circle
-        li.product-list__item.d-flex
-          img(src="https://via.placeholder.com/50", width="50")
-          span Sleek Hair Sedu Style
-          button.close-button
-            i.fa.fa-times-circle
+        ul.product-list
+          li.product-list__item.d-flex
+            img(src="https://via.placeholder.com/50", width="50")
+            span What Is The Right Look
+            button.close-button
+              i.fa.fa-times-circle
+          li.product-list__item.d-flex.selected
+            img(src="https://via.placeholder.com/50", width="50")
+            span What Is Botox
+            button.close-button
+              i.fa.fa-times-circle
+          li.product-list__item.d-flex.selected
+            img(src="https://via.placeholder.com/50", width="50")
+            span Youthfull And Vibrant Skin
+            button.close-button
+              i.fa.fa-times-circle
+          li.product-list__item.d-flex
+            img(src="https://via.placeholder.com/50", width="50")
+            span Breast Lifts Improvement
+            button.close-button
+              i.fa.fa-times-circle
+          li.product-list__item.d-flex.selected
+            img(src="https://via.placeholder.com/50", width="50")
+            span Dna The Future Of Nutrition
+            button.close-button
+              i.fa.fa-times-circle
+          li.product-list__item.d-flex
+            img(src="https://via.placeholder.com/50", width="50")
+            span Proven Techniques Help
+            button.close-button
+              i.fa.fa-times-circle
+          li.product-list__item.d-flex
+            img(src="https://via.placeholder.com/50", width="50")
+            span Sleek Hair Sedu Style
+            button.close-button
+              i.fa.fa-times-circle
 
     main.main
       section.container-fluid
@@ -87,17 +92,24 @@ html(lang="es")
                 .card.overflow-hidden.bg-tertiary
                   .card__image
                     img(src="https://via.placeholder.com/300", class="cover-img")
+                  
+                  .card__options.text-tertiary
+                    button(type="button", class="btn-options") ...
 
                   h3.card__title.text-gray-dark Whats Is Botox
 
                   .card__footer.d-flex
                     img(src="https://via.placeholder.com/32", class="img-circle")
                     span.user-name.text-gray-light Connor Lane
+                    i.fa.fa-lock.text-tertiary.bg-primary.img-circle
 
               .col-sm-6.col-md-12.col-lg-6
                 .card.overflow-hidden.bg-tertiary
                   .card__image
                     img(src="https://via.placeholder.com/300", class="cover-img")
+
+                  .card__options.text-tertiary
+                    button(type="button", class="btn-options") ...
 
                   h3.card__title.text-gray-dark Youthfull And Vibrant Skin
 
@@ -109,6 +121,9 @@ html(lang="es")
                 .card.overflow-hidden.bg-tertiary
                   .card__image
                     img(src="https://via.placeholder.com/300", class="cover-img")
+
+                  .card__options.text-tertiary
+                    button(type="button", class="btn-options") ...
 
                   h3.card__title.text-gray-dark Dna The Future of Nutrition
 
