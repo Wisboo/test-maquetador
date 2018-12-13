@@ -11,7 +11,10 @@ html(lang="es")
 
   body
     header.header.w-100.bg-tertiary
-      .container-fluid.d-flex
+      .container-fluid.d-flex.align-items-center
+        button(type="button", class="menu-trigger text-gray-light hidden-lg")
+          i.fa.fa-bars
+
         a.header__logo
           img(src="https://via.placeholder.com/50")
 
@@ -80,7 +83,7 @@ html(lang="es")
             p.text-gray-dark While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement ir provides, others may experience gambling as an addictive.
 
             .row
-              .col-lg-6
+              .col-sm-6.col-md-12.col-lg-6
                 .card.overflow-hidden.bg-tertiary
                   .card__image
                     img(src="https://via.placeholder.com/300", class="cover-img")
@@ -91,7 +94,7 @@ html(lang="es")
                     img(src="https://via.placeholder.com/32", class="img-circle")
                     span.user-name.text-gray-light Connor Lane
 
-              .col-lg-6
+              .col-sm-6.col-md-12.col-lg-6
                 .card.overflow-hidden.bg-tertiary
                   .card__image
                     img(src="https://via.placeholder.com/300", class="cover-img")
@@ -102,7 +105,7 @@ html(lang="es")
                     img(src="https://via.placeholder.com/32", class="img-circle")
                     span.user-name.text-gray-light Billy Jean
 
-              .col-lg-6
+              .col-sm-6.col-md-12.col-lg-6
                 .card.overflow-hidden.bg-tertiary
                   .card__image
                     img(src="https://via.placeholder.com/300", class="cover-img")
@@ -114,3 +117,11 @@ html(lang="es")
                     span.user-name.text-gray-light Mark Rodgers
 
   script.
+    var $sideMenuTrigger = $('.menu-trigger'),
+        $sideMenu = $('.side-menu'),
+        $mainBlock = $('.main');
+
+    $sideMenuTrigger.click(function() {
+        $sideMenu.toggleClass('open');
+        $mainBlock.toggleClass('opaque');
+    });

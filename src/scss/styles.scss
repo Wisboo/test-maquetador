@@ -11,7 +11,7 @@
 	padding: 14px 0;
 
 	.header__logo {
-		padding-left: 65px;
+		margin-left: 65px;
 	}
 
 	.header__nav {
@@ -74,7 +74,6 @@
 	margin-top: 80px;
 	overflow-x: hidden;
    overflow-y: auto;
-   transition: transform 0.35s ease;
    z-index: 99;
    padding: 10px;
 
@@ -171,8 +170,6 @@
 .main {
 	background-color: #f7f7f9;
 	min-height: 100vh;
-	padding: 150px 160px 60px;
-	margin-left: 350px;
 
 	h1 {
 		font-size: 43px;
@@ -213,6 +210,46 @@
 				font-size: 15px;
 				margin-left: 8px;
 			}
+		}
+	}
+}
+
+/***** Media Queries *****/
+@media screen and (min-width: 992px) {
+	.main {
+		padding: 150px 160px 60px;
+		margin-left: 350px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header {
+		.menu-trigger {
+			background-color: transparent;
+			border: none;
+		}
+
+		.header__logo {
+			margin-left: 25px;
+		}
+	}
+
+	.side-menu {
+		transform: translate(-350px, 0);
+   	transition: transform 0.35s ease;
+
+   	&.open {
+      	transform: translate(0, 0);
+   	}
+	}
+
+	.main {
+		padding: 150px 78px 60px;
+		opacity: 1;
+		transition: opacity 0.3s ease-in-out;
+
+		&.opaque {
+			opacity: 0.5;
 		}
 	}
 }

@@ -60,6 +60,10 @@ $font-primary: 'Open Sans', sans-serif;
 	overflow: hidden !important;
 }
 
+.align-items-center {
+	align-items: center !important;
+}
+
 @mixin translateX {
    left: 50%;
    -ms-transform: translateX(-50%);
