@@ -10,15 +10,23 @@ html(lang="es")
     script(src="https://use.fontawesome.com/0f582737cd.js")
 
   body
-    header.header
+    header.header.w-100.bg-tertiary
       .container-fluid.d-flex
         a.header__logo
           img(src="https://via.placeholder.com/50")
 
-        nav
-          ul.nav
+        nav.header__nav.d-flex
+          ul.main-menu.d-flex
             li
               a(href="#") Sobre nosotros
+          
+          .notifications
+            i.fa.fa-bell
+            span.quantity.text-tertiary.text-center.bg-primary 2
+
+          .user-menu
+            span.user-menu__name.text-uppercase.text-gray-light Rubén
+            img(src="https://via.placeholder.com/40", class="img-circle", width="40")
             
     aside.side-menu.bg-tertiary
       form.search.w-100
