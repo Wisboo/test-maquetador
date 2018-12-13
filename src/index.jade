@@ -12,14 +12,14 @@ html(lang="es")
   body
     header.header.w-100.bg-tertiary
       .container-fluid.d-flex.align-items-center
-        button(type="button", class="menu-trigger text-gray-light hidden-lg")
+        button(type="button", class="menu-trigger text-gray-light hidden-md")
           i.fa.fa-bars
 
-        a.header__logo
+        a(href="/", class="header__logo")
           img(src="https://via.placeholder.com/50")
 
         nav.header__nav.d-flex
-          ul.main-menu.d-flex
+          ul.main-menu
             li
               a(href="#") Sobre nosotros
           
