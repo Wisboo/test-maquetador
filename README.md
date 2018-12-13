@@ -13,3 +13,10 @@ Notas:
 - En caso de tener problemas al ejecutar los comandos gulp o bower, puede agregar los siguientes alias en la terminal desde la carpeta raiz del proyecto
   alias gulp='node_modules/.bin/gulp'
   alias bower='node_modules/.bin/bower'
+
+
+### Consideraciones
+Una vez completado los pasos anteriores, comunicarse con el equipo de Wisboo para recibir el enunciado del test y assets.
+Debes crear una nueva rama llamada 'entrega1', sobre la cual trabarás el enunciado.
+Durante el test se debe hacer commits frecuentemente. Una vez desees enviar tu entrega final, debes crear un PR para mergear la rama 'entregable1' a Master, sobre está rama haremos las observaciones pertinentes.
+¡Buena Suerte!
