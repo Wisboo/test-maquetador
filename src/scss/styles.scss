@@ -43,7 +43,28 @@ body{
 	}
 }
 
+.container_vertical {
+    padding: 10px !important;
+    margin:0;
+    background:#fff;
+    width:270px;
+    min-height:100vh;
+	position: fixed;
+	top: 0;
+}
 
+.container_vertical-li:first-child{
+	margin-top: 70px;
+}
+
+.input-group-addon{
+	background: #fff;
+}
+.container_vertical .container_vertical-li {
+    padding: 2px !important;
+    word-wrap: break-word;
+    list-style:none;
+}
 
 
 
