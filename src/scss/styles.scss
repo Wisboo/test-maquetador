@@ -4,5 +4,117 @@
 .header {
 	min-height: 80px;
 	border-bottom: 1px solid #b3bac9;
-	box-shadow: 3px 3px 3px 0 rgba(66, 66, 66, 0.2);
+	box-shadow: 3px 3px 3px 0 rgba(66, 66, 66, 0.1);
+
+	.header__logo {
+		padding-left: 65px;
+	}
+
+	nav {
+		margin-left: auto;
+		padding-left: 20px;
+	}
+}
+
+.side-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 350px;
+	margin-top: 80px;
+	overflow-x: hidden;
+   overflow-y: auto;
+   transition: transform 0.35s ease;
+   z-index: 99;
+   padding: 10px;
+
+	.search {
+		.input-group {
+   		position: relative;
+
+   		&:before {
+   			@include pseudo;
+   			@include translateY;
+   			width: 1px;
+   			left: 57px;
+   			height: 28px;
+   			background-color: #697284;
+   			z-index: 10;
+   		}
+
+   		.search__button {
+   			position: absolute;
+   			@include translateY;
+				left: 16px;
+				font-size: 18px;
+				color: #b3bac9;
+				border: none;
+				background-color: transparent;
+				z-index: 10;
+   		}
+
+   		.search--input {
+   			height: 47px;
+   			color: #b3bac9;
+   			border: 2px solid #eaecf0;
+   			border-radius: 5px;
+   			box-shadow: none;
+   			padding-left: 62px;
+   		}
+		}
+   }
+
+   .product-list {
+   	border-top: 1px solid #d4d8e1;
+   	padding-top: 14px;
+   	margin-top: 14px;
+
+   	.product-list__item {
+   		position: relative;
+   		border: 1px solid #eaecf0;
+   		border-radius: 5px;
+   		align-items: center;
+   		font-size: 15px;
+   		font-weight: 600;
+   		color: #697284;
+   		padding: 4px 34px 4px 4px;
+   		margin-bottom: 14px;
+
+   		img {
+   			margin-right: 19px;
+   		}
+
+   		.close-button {
+   			position: absolute;
+   			display: none;
+   			color: $tertiary;
+   			border: none;
+				background-color: transparent;
+				right: 14px;
+				@include translateY;
+   		}
+
+   		&.selected {
+   			background-color: $primary;
+   			border-color: $primary;
+
+   			&:hover {
+					.close-button {
+   					display: block;
+					}
+   			}
+   		}
+
+   		&:hover {
+   			background-color: $secondary;
+   			border-color: $secondary;
+   		}
+
+   		&.selected,
+   		&:hover {
+   			color: $tertiary;
+   		}
+   	}
+   }
 }

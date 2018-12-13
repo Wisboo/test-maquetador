@@ -1,6 +1,6 @@
 $primary: #04b2f3;
 $secondary: #81d8f9;
-$tertiary: #f7f7f9;
+$tertiary: #fff;
 $font-primary: 'Open Sans', sans-serif;
 
 .text-primary {
@@ -25,6 +25,37 @@ $font-primary: 'Open Sans', sans-serif;
 
 .d-flex {
 	display: flex !important;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+.h-100 {
+	height: 100% !important;
+}
+
+.cover-img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+@mixin translateX {
+   left: 50%;
+   -ms-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
+
+@mixin translateY {
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+@mixin pseudo($pos: absolute, $content: '') {
+   position: $pos;
+   content: $content;
 }
 
 * {
