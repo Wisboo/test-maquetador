@@ -1,1 +1,52 @@
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+/**{
+	background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important;
+}*/
+
+// variables 
+$gray:#f7f7f9;
+$gray-text:#697284;
+body{
+	background: $gray;
+}
+
+.navbar-header{
+	img{
+		margin-top: -10px;
+		margin-left: 40px;
+	}
+}
+.navbar{
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	background: #fff;
+}
+.navbar-nav{
+	li{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 13px;
+		font-weight: 600;
+		margin-top: 10px;
+		color: #697284;
+
+		i{
+			margin-top: 20px;
+
+		}
+		img{
+			margin-top:-10px;
+			border-radius: 30px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
