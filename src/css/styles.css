@@ -7405,6 +7405,11 @@ hr {
   margin-left: 270px;
 }
 
+.container_vertical ul {
+  margin: 0px;
+  padding: 0px;
+}
+
 .card {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !important;
   cursor: pointer;
@@ -7422,17 +7427,58 @@ hr {
   margin-bottom: 15px;
 }
 
+.container_vertical {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
 .name_card {
   margin-top: 15px;
   margin-left: 10px;
+}
+
+.container_vertical-img {
+  padding: 5px;
+}
+
+.selected {
+  background: #1675C4;
+}
+
+.vertical_img-name {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
 }
 
 .name-card-flex {
   display: flex;
 }
 
+.container_vertical-flex {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid #d4d8e1;
+  border-radius: 4px;
+}
+.container_vertical-flex:hover {
+  background: #5FAEF0;
+  cursor: pointer;
+}
+.container_vertical-flex:active {
+  background: #0000;
+  cursor: pointer;
+}
+
 .card-text {
   margin-top: 10px;
+}
+
+li {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

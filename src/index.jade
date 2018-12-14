@@ -38,7 +38,16 @@ html(lang='es')
             i.fas.fa-search
           input.form-control(type='text', placeholder='Buscar producto')
         hr
-        span.text About
+        ul
+          li.container_vertical-flex
+            img.container_vertical-img(src='https://via.placeholder.com/40x40')
+            p.vertical_img-name Lorem ipsum.
+          li.container_vertical-flex
+            img.container_vertical-img(src='https://via.placeholder.com/40x40')
+            p.vertical_img-name Lorem ipsum.
+          li.container_vertical-flex
+            img.container_vertical-img(src='https://via.placeholder.com/40x40')
+            p.vertical_img-name Lorem ipsum.
     .container_leading
       .container.container_leading-margin
         .row
@@ -76,3 +85,13 @@ html(lang='es')
                 p.name_card Connor Jane
     script(src='https://code.jquery.com/jquery-3.3.1.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+    script.
+      $(".container_vertical-flex").on('click', function() {
+      $(this).toggleClass("selected");
+      if ($('.container_vertical-flex').length == $('.selected').length) {
+      Seleccionar_Todo = true;
+      } else {
+      Seleccionar_Todo = false;
+      }
+      });
+
