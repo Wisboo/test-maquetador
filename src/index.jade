@@ -42,12 +42,15 @@ html(lang='es')
           li.container_vertical-flex
             img.container_vertical-img(src='https://via.placeholder.com/40x40')
             p.vertical_img-name Lorem ipsum.
+            i#icon
           li.container_vertical-flex
             img.container_vertical-img(src='https://via.placeholder.com/40x40')
             p.vertical_img-name Lorem ipsum.
+            i#icon
           li.container_vertical-flex
             img.container_vertical-img(src='https://via.placeholder.com/40x40')
             p.vertical_img-name Lorem ipsum.
+            i#icon
     .container_leading
       .container.container_leading-margin
         .row
@@ -60,16 +63,17 @@ html(lang='es')
         .row
           .col-sm-offset-2.col-sm-4
             .card
-              img(src='https://via.placeholder.com/320x320')
+              img(src='https://via.placeholder.com/320x280')
+              i.fas.fa-ellipsis-h
               .card-container.card-center
                 p.card-text The Troll's tongue in Hardanger, Norway
               .name-card-flex
                 img.name_card-img(src='https://via.placeholder.com/50x50')
                 p.name_card Connor Jane
-          | 		<
           .col-sm-4
             .card
-              img(src='https://via.placeholder.com/320x320')
+              img(src='https://via.placeholder.com/320x280')
+              i.fas.fa-ellipsis-h
               .card-container.card-center
                 p.card-text The Troll's tongue in Hardanger, Norway
               .name-card-flex
@@ -77,7 +81,8 @@ html(lang='es')
                 p.name_card Connor Jane
           .col-sm-offset-2.col-sm-4
             .card
-              img(src='https://via.placeholder.com/320x320')
+              img(src='https://via.placeholder.com/320x280')
+              i.fas.fa-ellipsis-h
               .card-container.card-center
                 p.card-text The Troll's tongue in Hardanger, Norway
               .name-card-flex
@@ -88,10 +93,5 @@ html(lang='es')
     script.
       $(".container_vertical-flex").on('click', function() {
       $(this).toggleClass("selected");
-      if ($('.container_vertical-flex').length == $('.selected').length) {
-      Seleccionar_Todo = true;
-      } else {
-      Seleccionar_Todo = false;
-      }
+      $(this).children('i').toggleClass("fas fa-times-circle");
       });
-
