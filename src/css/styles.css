@@ -1,0 +1,287 @@
+.navbar-brand img {
+  margin-top: -8px;
+  margin-left: 40px;
+}
+
+.navbar {
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  background: #fff;
+  border-bottom: 2px solid #d4d8e1;
+}
+
+.logo-xs {
+  margin-left: 7px;
+}
+
+.navbar-nav-img {
+  height: 50px;
+}
+
+.navbar-nav {
+  display: flex;
+  float: right;
+}
+.navbar-nav li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #697284;
+}
+.navbar-nav li i {
+  margin-top: 20px;
+  margin-right: 15px;
+}
+.navbar-nav li a {
+  margin-right: 15px;
+}
+.navbar-nav li p {
+  margin-top: 16px;
+  margin-left: 10px;
+}
+.navbar-nav li img {
+  margin-top: -12px;
+  border-radius: 30px;
+}
+
+.item-slide-xs {
+  margin-top: 30px;
+  color: #697284;
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding-bottom: 0;
+  }
+  .navbar li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #697284;
+  }
+  .navbar li i {
+    margin-top: 15px;
+    margin-right: 0;
+  }
+  .navbar li p {
+    margin-top: 12px;
+  }
+  .navbar li img {
+    margin-top: -15px;
+    border-radius: 30px;
+    margin-right: 0;
+  }
+
+  .navbar-brand img {
+    margin-left: 0;
+  }
+}
+.container_vertical {
+  padding: 10px !important;
+  background: #fff;
+  width: 270px;
+  height: 100%;
+  top: 0;
+  margin-bottom: 15px;
+  position: fixed !important;
+  overflow: auto;
+}
+.container_vertical ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ul-vertical-container {
+  height: 600px;
+}
+
+.input-group input {
+  height: 40px;
+}
+
+.container_vertical-li:first-child {
+  margin-top: 70px;
+}
+
+.input-group-addon {
+  background: #fff;
+}
+
+.container_vertical .container_vertical-li {
+  padding: 2px !important;
+  word-wrap: break-word;
+  list-style: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #f7f7f9;
+  color: #f7f7f9;
+}
+
+.selected {
+  background: #01A9DB;
+}
+.selected i {
+  margin-top: 18px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.vertical_img-name {
+  margin-top: 16px;
+  margin-left: 10px;
+  width: 120px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #697284;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.container_vertical-flex {
+  display: flex;
+  margin-bottom: 10px;
+  border: 0.5px solid #d4d8e1;
+  border-radius: 4px;
+}
+.container_vertical-flex img {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+.container_vertical-flex:hover {
+  background: #58D3F7;
+  cursor: pointer;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 992px) {
+  .opacity {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .slide {
+    display: none;
+  }
+
+  .container_vertical {
+    z-index: 1;
+  }
+}
+body {
+  background: #f7f7f9;
+}
+
+.title {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.subtitle {
+  margin-bottom: 35px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #697284;
+}
+
+.container_leading-margin {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.container_leading {
+  margin-left: 270px;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .container_leading {
+    margin-left: 15px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+}
+.card {
+  cursor: pointer;
+  width: 100%;
+}
+.card span {
+  position: absolute;
+  color: #fff;
+  margin-left: -25px;
+  margin-top: 10px;
+}
+.card:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.card-img-leading {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+  height: 200px;
+}
+
+.card-text {
+  margin-left: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.name_card-img {
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.name_card {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #697284;
+}
+
+.col-sm-4 {
+  background: #fff;
+  border-radius: 8px 8px 8px 8px;
+  padding-left: 0;
+  padding-right: 0;
+  border: 1px solid #d4d8e1;
+  width: 250px;
+  margin-bottom: 30px;
+}
+.col-sm-4:nth-child(2n+1) {
+  margin-right: 100px;
+}
+
+.name-card-flex {
+  display: flex;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+li {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

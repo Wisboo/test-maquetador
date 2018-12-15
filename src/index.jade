@@ -1,12 +1,160 @@
 doctype html
-html(lang="es")
+html(lang='es')
   head
-    title
-      | Test
-    meta(charset="UTF-8")
-    link(href="/css/styles.css", rel="stylesheet")
-    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
-
+    meta(charset='UTF-8')
+    title Test Maquetador
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/styles.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.6.1/css/all.css', integrity='sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Noto+Serif+TC:900', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Noto+Sans:700', rel='stylesheet')
   body
-
-  script.
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        a.item-slide-xs.visible-xs.text-left(href='#')
+          i.fas.fa-bars
+        a.navbar-brand.hidden-xs(href='#')
+          img(src='https://via.placeholder.com/150x60', alt='')
+        a.navbar-brand.visible-xs.logo-xs(href='#')
+          img(src='https://via.placeholder.com/80x60', alt='')
+        .navbar-right
+          ul.nav.navbar-nav
+            li.hidden-xs
+              a(href='#') SOBRE NOSOTROS
+            li.slide-tablet.visible-sm
+              a(href='#')
+                | MÁS 
+                span.caret
+            li
+              i.fas.fa-bell
+            li
+              p RUBEN
+            li
+              a.navbar-nav-img(href='#')
+                img(src='https://via.placeholder.com/50x50', alt='')
+    .vertical
+      ul.container_vertical.slide
+        li.container_vertical-li.diactive
+          .input-group
+            span.input-group-addon
+              i.fas.fa-search
+            input.form-control(type='text', placeholder='Buscar producto')
+          hr
+          .ul-vertical-container
+            ul
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_mountains.jpg')
+                p.vertical_img-name Lorem ipsum dolor sit amet
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_forest.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_forest.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_forest.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_forest.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_forest.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_forest.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_mountains.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_mountains.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_mountains.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_mountains.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+              li.container_vertical-flex
+                img(src='https://www.w3schools.com/css/img_mountains.jpg')
+                p.vertical_img-name Lorem ipsum.
+                i#icon
+    .container_leading
+      .container.container_leading-margin
+        .row
+          .col-lg-8.col-lg-offset-2.col-xs-10.col-xs-offset-1.col-sm-offset-1.col-md-offset-1.col-sm-10
+            h1.title Pretty Little Thing Gress
+        .row
+          .col-sm-offset-1.col-md-offset-1.col-lg-offset-2.col-xs-10.col-xs-offset-1.col-lg-8.col-sm-10.col-xs-10
+            p.subtitle
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe mollitia facere eligendi voluptate ad explicabo, dignissimos molestiae odio nobis in, quis iusto illo unde commodi cupiditate veritatis aspernatur cumque.
+        .row
+          .col-sm-offset-1.col-sm-11.col-md-offset-1.col-xs-10.col-xs-offset-1.col-lg-offset-2.col-lg-10
+            .col-sm-4
+              .card
+                img.card-img-leading(src='https://www.w3schools.com/css/img_mountains.jpg')
+                span.item-card-img
+                  i.fas.fa-ellipsis-h
+                .card-container.card-center
+                  p.card-text The Troll's tongue in Hardanger, Norway
+                .name-card-flex
+                  img.name_card-img(src='https://via.placeholder.com/50x50')
+                  p.name_card Connor Jane
+            .col-sm-4
+              .card
+                img.card-img-leading(src='https://www.w3schools.com/css/img_lights.jpg')
+                span
+                  i.fas.fa-ellipsis-h
+                .card-container.card-center
+                  p.card-text The Troll's tongue in Hardanger, Norway
+                .name-card-flex
+                  img.name_card-img(src='https://via.placeholder.com/50x50')
+                  p.name_card Connor Jane
+            .col-sm-4
+              .card
+                img.card-img-leading(src='https://www.w3schools.com/css/img_forest.jpg')
+                span
+                  i.fas.fa-ellipsis-h
+                .card-container.card-center
+                  p.card-text The Troll's tongue in Hardanger, Norway
+                .name-card-flex
+                  img.name_card-img(src='https://via.placeholder.com/50x50')
+                  p.name_card Connor Jane
+            .col-sm-4
+              .card
+                img.card-img-leading(src='https://www.w3schools.com/css/img_5terre.jpg')
+                span
+                  i.fas.fa-ellipsis-h
+                .card-container.card-center
+                  p.card-text The Troll's tongue in Hardanger, Norway
+                .name-card-flex
+                  img.name_card-img(src='https://via.placeholder.com/50x50')
+                  p.name_card Connor Jane
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+    script.
+      $(".container_vertical-flex").on('click', function() {
+      $(this).toggleClass("selected");
+      $(this).children('i').toggleClass("fas fa-times-circle");
+      });
+      $(".item-slide-xs").on('click', function() {
+      $(".container_vertical").toggleClass("slide");
+      $(".container_leading").toggleClass("opacity");
+      });
+      $(".slide-tablet").on('click', function() {
+      $(".container_vertical").toggleClass("slide");
+      $(".container_leading").toggleClass("opacity");
+      });
